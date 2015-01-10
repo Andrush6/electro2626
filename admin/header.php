@@ -10,14 +10,8 @@
   <body>
 	<div class="row-fluid">
 	  <div id="header">
-		<div id="logo-wrapper" class="col-md-8">
-		  <img src="http://<?= $_SERVER['HTTP_HOST']?>/images/2626.png"/>
-		  Logó meg egyéb...
-		</div>
-		<div id="cart-wrapper" class="col-md-4">
-		  <p>itt lesz a kosár...</p>
-		  <a href="http://<?= $_SERVER['HTTP_HOST']?>/cart.php"><span class="glyphicon glyphicon-shopping-cart"></span></a>
-		</div>
+		<h1>Admin felület</h1>
 	  </div>
 	</div>
 	<div class="clearfix"></div>
+
