@@ -22,6 +22,7 @@ class db_connection {
 	if (!$this->_conn) {
 	  die("Connection failed: " . mysqli_connect_error());
 	}
+	$this->_conn->set_charset("utf8"); 
 	return $this;
   }
 
@@ -84,9 +85,4 @@ class db_connection {
 	$result = $this->_conn->query($sql);
 	return $result->fetch_assoc();
   }
-  
-  public function cart() {
-	return true;
-  }
-  
 }
