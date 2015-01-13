@@ -14,19 +14,19 @@ include 'header.php';
 		<form action="buy.php" method="post">
 		  <div class="form-group">
 			<label for="name">Név</label>
-			<input type="text" class="form-control" id="name" placeholder="ide írd be a teljes neved...">
+			<input type="text" class="form-control" id="name" name="name" placeholder="ide írd be a teljes neved...">
 		  </div>
 		  <div class="form-group">
 			<label for="email">Email cím</label>
-			<input type="email" class="form-control" id="email" placeholder="ide írd be az email címed...">
+			<input type="email" class="form-control" id="email" name="email" placeholder="ide írd be az email címed...">
 		  </div>
 		  <div class="form-group">
-			<label for="name">Cím</label>
-			<input type="text" class="form-control" id="name" placeholder="ide írd be a teljes címed...">
+			<label for="address">Cím</label>
+			<input type="text" class="form-control" id="address" name="address" placeholder="ide írd be a teljes címed...">
 		  </div>
 		  <div class="form-group">
-			<label for="name">Telefonszám</label>
-			<input type="tel" class="form-control" id="name" placeholder="ide írd be a telefonszámod...">
+			<label for="t_number">Telefonszám</label>
+			<input type="tel" class="form-control" id="tel" name="tel" placeholder="ide írd be a telefonszámod...">
 		  </div>
 		  <button type="submit" class="btn btn-default">Megveszem</button>
 		</form>

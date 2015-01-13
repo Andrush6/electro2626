@@ -85,4 +85,15 @@ class db_connection {
 	$result = $this->_conn->query($sql);
 	return $result->fetch_assoc();
   }
+  
+  public function insert_customer($customer_datas) {
+	$sql = "INSERT INTO customers (name, email, address, tel) VALUES ('" . $customer_datas['name'] . "', '" . $customer_datas['email'] . "', '" . $customer_datas['address'] . "', '" . $customer_datas['tel'] . "' )";
+	$this->_conn->query($sql);
+	return $this->_conn->insert_id;
+  }
+  
+  public function insert_order($customer_id, $product_datas){
+	$sql = "INSERT INTO orders (customer_id, product_datas) VALUES (" . $customer_id . ", '" . $product_datas . "')";
+	$this->_conn->query($sql);
+  }
 }

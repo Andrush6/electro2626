@@ -11,15 +11,5 @@
 	<a href="http://<?= $_SERVER['HTTP_HOST'] ?>/cart/add.php?product_id=<?= $product['id'] ?>" class="btn btn-success btn-block">
 	  Kosárba
 	</a>
-	<div class="ratings">
-	  <p class="pull-right">15 reviews</p>
-	  <p>
-		<span class="glyphicon glyphicon-star"></span>
-		<span class="glyphicon glyphicon-star"></span>
-		<span class="glyphicon glyphicon-star"></span>
-		<span class="glyphicon glyphicon-star"></span>
-		<span class="glyphicon glyphicon-star"></span>
-	  </p>
-	</div>
   </div>
 </div>

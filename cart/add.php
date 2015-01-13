@@ -9,7 +9,7 @@ $product = db_connection::init()->get_product_by_id($id);
 if ($product != null) {
   if ($product['quantity'] > 0) {
 	if (!is_in_cart($id)) {
-	  add_to_cart($id);
+	  add_to_cart($id, $product['price']);
 	}
 	redirect_to_cart();
   } else {
@@ -36,8 +36,8 @@ function is_in_cart($id) {
   return false;
 }
 
-function add_to_cart($id) {
-  $_SESSION['cart'][] = array('product_id' => $id, 'quantity' => 1);
+function add_to_cart($id, $price) {
+  $_SESSION['cart'][] = array('product_id' => $id, 'quantity' => 1, 'price' => $price);
 }
 
 function redirect_to_cart($message = null) {
