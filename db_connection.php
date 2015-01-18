@@ -37,16 +37,6 @@ class db_connection {
 	return $this;
   }
 
-  public function users() {
-	$this->_table = 'users';
-	return $this;
-  }
-
-  public function carts() {
-	$this->_table = 'carts';
-	return $this;
-  }
-
   public function order($field) {
 	$this->_order = $field;
 	return $this;

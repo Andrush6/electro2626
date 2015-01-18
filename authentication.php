@@ -35,17 +35,7 @@ class authentication {
   }
 
   public static function show_login_form() {
-	echo '<form class="form-inline" action="" method="POST" >
-  <div class="form-group">
-    <label class="sr-only" for="username">Email address</label>
-    <input type="text" class="form-control" id="username" placeholder="Enter email" name="username">
-  </div>
-  <div class="form-group">
-    <label class="sr-only" for="passwd">Password</label>
-    <input type="password" class="form-control" id="passwd" placeholder="Password" name="passwd">
-  </div>
-  <input type="submit" class="btn btn-default" value="Szajnin">
-</form>';
+	include 'login_form.php';
   }
 
 }
